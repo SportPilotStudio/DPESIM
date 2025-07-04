@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import './App.css';
+import React, { useState } from 'react';
+import ChatBox from './ChatBox';
 
 function App() {
   const [certificate, setCertificate] = useState('');
@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '2rem', fontFamily: 'Arial' }}>
+    <div style={{ padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
       {!started ? (
         <>
           <h1>🛫 Welcome to DPESIM</h1>
@@ -46,7 +46,7 @@ function App() {
               color: 'white',
               border: 'none',
               borderRadius: '4px',
-              cursor: 'pointer'
+              cursor: 'pointer',
             }}
           >
             Start Simulation
