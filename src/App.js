@@ -55,7 +55,7 @@ function App() {
       ) : (
         <>
           <h2>Simulated Oral Exam: {certificate.toUpperCase()} Certificate</h2>
-          <p>(The chat interface will appear here in the next step)</p>
+          <ChatBox certificate={certificate} />
         </>
       )}
     </div>
